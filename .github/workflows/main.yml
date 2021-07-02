@@ -12,6 +12,6 @@ jobs:
         with:
           source_dir: powershell
           container_name: publicscripts
-          connection_string: ${{ secrets.ConnectionString }}
+          connection_string: ${{ secrets.CONNECTIONSTRING }}
           extra_args: '--pattern *.ps1'
           sync: false
