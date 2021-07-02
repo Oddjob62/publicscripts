@@ -1,1 +1,2 @@
 get-disk | Where-Object partitionstyle -eq 'raw' | initialize-disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "datadisk" -Confirm:$false
+# test comment
